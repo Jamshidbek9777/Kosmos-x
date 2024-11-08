@@ -23,7 +23,7 @@ const Navbar = () => {
     localStorage.setItem(LANGUAGE, e.target.value);
     document.location.reload(true);
   };
-  const location = useLocation()
+  const location = useLocation();
 
   return (
     <>
@@ -41,30 +41,76 @@ const Navbar = () => {
             <div className={`col-9 mobileWrap ${burger ? "" : "burgered"}`}>
               <ul className="nav-menu">
                 <li>
-                  <Link className={`${location.pathname === '/' ? 'active-link' : ''}`} onClick={() => setBurger(!burger)} to="/">
+                  <Link
+                    className={`${
+                      location.pathname === "/" ? "active-link" : ""
+                    }`}
+                    onClick={() => setBurger(!burger)}
+                    to="/"
+                  >
                     {getText("home")}
                   </Link>
                 </li>
                 <li>
-                  <Link className={`${location.pathname === '/about' ? 'active-link' : ''}`} onClick={() => setBurger(!burger)} to="/about">
+                  <Link
+                    className={`${
+                      location.pathname === "/about" ? "active-link" : ""
+                    }`}
+                    onClick={() => setBurger(!burger)}
+                    to="/about"
+                  >
                     {getText("aboutUs")}
                   </Link>
                 </li>
                 <li className="dropdown_link">
-                  <Link className={`${location.pathname === '/services' ? 'active-link' : ''}`} onClick={() => setBurger(!burger)} to="/services">
+                  <Link
+                    className={`${
+                      location.pathname === "/services" ? "active-link" : ""
+                    }`}
+                    onClick={() => setBurger(!burger)}
+                    to="/services"
+                  >
                     {getText("services")}
                     <ul className="dropdown-box">
-                      <li> <Link className={`${location.pathname === '/technology-transfer' ? 'active-link' : ''}`} onClick={() => setBurger(!burger)} to="/technology-transfer">
-                        Teknoloji Transferi
-                      </Link></li>
-                      <li> <Link className={`${location.pathname === '/sectoral-organizations' ? 'active-link' : ''}`} onClick={() => setBurger(!burger)} to="/sectoral-organizations">
-                        Sektörel Organizasyonlar
-                      </Link></li>
+                      <li>
+                        {" "}
+                        <Link
+                          className={`${
+                            location.pathname === "/technology-transfer"
+                              ? "active-link"
+                              : ""
+                          }`}
+                          onClick={() => setBurger(!burger)}
+                          to="/technology-transfer"
+                        >
+                          Teknoloji Transferi
+                        </Link>
+                      </li>
+                      <li>
+                        {" "}
+                        <Link
+                          className={`${
+                            location.pathname === "/sectoral-organizations"
+                              ? "active-link"
+                              : ""
+                          }`}
+                          onClick={() => setBurger(!burger)}
+                          to="/sectoral-organizations"
+                        >
+                          Sektörel Organizasyonlar
+                        </Link>
+                      </li>
                     </ul>
                   </Link>
                 </li>
                 <li>
-                  <Link className={`${location.pathname === '/contacts' ? 'active-link' : ''}`} onClick={() => setBurger(!burger)} to="/contacts">
+                  <Link
+                    className={`${
+                      location.pathname === "/contacts" ? "active-link" : ""
+                    }`}
+                    onClick={() => setBurger(!burger)}
+                    to="/contacts"
+                  >
                     {getText("contacts")}
                   </Link>
                 </li>
@@ -74,7 +120,7 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faGlobe} />
                   </span>
                   <select className="siteLang" onChange={changeLanguage}>
-                  <option value="uz" selected={getLanguage() === "uz"}>
+                    <option value="uz" selected={getLanguage() === "uz"}>
                       O‘zbek
                     </option>
                     <option value="ru" selected={getLanguage() === "ru"}>
@@ -86,7 +132,6 @@ const Navbar = () => {
                     <option value="tr" selected={getLanguage() === "tr"}>
                       Türkçe
                     </option>
-                 
                   </select>
                 </li>
                 {/* <li className="position-relative">
@@ -101,8 +146,9 @@ const Navbar = () => {
 
             <div
               onClick={() => setBurger(!burger)}
-              className={`burger pr-4 ml-auto d-flex d-lg-none ${burger ? "burgered" : ""
-                }`}
+              className={`burger pr-4 ml-auto d-flex d-lg-none ${
+                burger ? "burgered" : ""
+              }`}
             >
               <div className="burger1"></div>
               <div className="burger2"></div>
