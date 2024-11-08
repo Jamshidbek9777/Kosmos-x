@@ -18,10 +18,10 @@ const Projects = () => {
                 <div className="card h-100">
                   <div className="card-body">
                     <div className="img">
-                      <img className="w-100" src="./img/edu.png" alt="" />
+                      <img className="w-100" src="./img/service1.jpg" alt="" />
                     </div>
                     <div className="info">
-                      <h5>{getText("edu")}</h5>
+                      <h5>Uzay Kampı Gezisi</h5>
                     </div>
                   </div>
                 </div>
@@ -32,28 +32,10 @@ const Projects = () => {
                 <div className="card h-100">
                   <div className="card-body">
                     <div className="img">
-                      <img className="w-100" src="./img/hospital.jpg" alt="" />
+                      <img className="w-100" src="./img/service2.jpg" alt="" />
                     </div>
                     <div className="info">
-                      <h5>{getText("hospitality")}</h5>
-                    </div>
-                  </div>
-                </div>
-              </Tilt>
-            </div>
-            <div className="col-lg-3 col-md-6 col-12 mt-5">
-              <Tilt className="tilt p-0 m-0 w-100 h-100">
-                <div className="card h-100">
-                  <div className="card-body">
-                    <div className="img">
-                      <img
-                        className="w-100"
-                        src="./img/hotel.webp"
-                        alt=""
-                      />
-                    </div>
-                    <div className="info">
-                      <h5>{getText("hotel")}</h5>
+                      <h5>Uzay Atölyeleri</h5>
                     </div>
                   </div>
                 </div>
@@ -66,12 +48,30 @@ const Projects = () => {
                     <div className="img">
                       <img
                         className="w-100"
-                        src="./img/contruction.jpg"
+                        src="./img/service3.jpg"
                         alt=""
                       />
                     </div>
                     <div className="info">
-                      <h5>{getText("building")}</h5>
+                      <h5>Müfredat Geliştirme</h5>
+                    </div>
+                  </div>
+                </div>
+              </Tilt>
+            </div>
+            <div className="col-lg-3 col-md-6 col-12 mt-5">
+              <Tilt className="tilt p-0 m-0 w-100 h-100">
+                <div className="card h-100">
+                  <div className="card-body">
+                    <div className="img">
+                      <img
+                        className="w-100"
+                        src="./img/service4.avif"
+                        alt=""
+                      />
+                    </div>
+                    <div className="info">
+                      <h5>Eğitimcinin Eğitimi</h5>
                     </div>
                   </div>
                 </div>
@@ -83,10 +83,10 @@ const Projects = () => {
                 <div className="card h-100">
                   <div className="card-body">
                     <div className="img">
-                      <img className="w-100" src="./img/crm.jpg" alt="" />
+                      <img className="w-100" src="./img/service5.jpg" alt="" />
                     </div>
                     <div className="info">
-                      <h5>CRM</h5>
+                      <h5>Farkındalık Etkinlikleri</h5>
                     </div>
                   </div>
                 </div>
@@ -97,10 +97,10 @@ const Projects = () => {
                 <div className="card h-100">
                   <div className="card-body">
                     <div className="img">
-                      <img className="w-100" src="./img/pharmacy.jpg" alt="" />
+                      <img className="w-100" src="./img/service5.jpg" alt="" />
                     </div>
                     <div className="info">
-                      <h5>{getText("pharmacy")}</h5>
+                      <h5>Kitap Yayıncılığı</h5>
                     </div>
                   </div>
                 </div>
@@ -113,12 +113,12 @@ const Projects = () => {
                     <div className="img">
                       <img
                         className="w-100"
-                        src="./img/restaurant.jpg"
+                        src="./img/service6.webp"
                         alt=""
                       />
                     </div>
                     <div className="info">
-                      <h5>{getText("restaurant")}</h5>
+                      <h5>Online Eğitim Platformu</h5>
                     </div>
                   </div>
                 </div>
