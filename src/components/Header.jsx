@@ -37,12 +37,20 @@ const Header = () => {
               <div className="row align-items-center justify-content-center">
                 <div className="col-md-6">
                   <div className="info flex-column">
-                    <div className="logo">
-                      <img src="./img/okulaile.png" alt="" />
-                    </div>
-                    <h3>{getText("headerokulT")}</h3>
-                    <p>{getText("headerokulP")}</p>
-                    <Link to="okulaile" className="myBtn custom-btn btn-16" type="submit">
+                    <h3>Uzay Kampı Gezisi</h3>
+                    <p>
+                      KosmosX, Türkiye’deki uzay kampının Özbekistan’daki
+                      exclusive distribütörü olarak, katılımcılarına eşsiz bir
+                      uzay deneyimi sunuyor. Uzay kampı gezisi, her yaştan
+                      katılımcının uzayın sırlarını keşfetmesini ve geleceğin
+                      bilim insanları için ilham kaynağı olmasını amaçlayan
+                      heyecan verici bir programdır.
+                    </p>
+                    <Link
+                      to="okulaile"
+                      className="myBtn custom-btn btn-16"
+                      type="submit"
+                    >
                       {getText("more")}
                     </Link>
                   </div>
@@ -136,12 +144,13 @@ const Header = () => {
               <div className="row align-items-center justify-content-center">
                 <div className="col-md-6">
                   <div className="info flex-column">
-                    <div className="logo p-0">
-                      <img src="./img/k12net.png" alt="" />
-                    </div>
                     <h3>{getText("headk12netT")}</h3>
                     <p>{getText("headk12netP")}</p>
-                    <Link to="https://k12net.com/tr/" className="myBtn custom-btn btn-16" type="submit">
+                    <Link
+                      to="https://k12net.com/tr/"
+                      className="myBtn custom-btn btn-16"
+                      type="submit"
+                    >
                       {getText("more")}
                     </Link>
                   </div>
@@ -159,12 +168,13 @@ const Header = () => {
               <div className="row align-items-center justify-content-center">
                 <div className="col-md-6">
                   <div className="info flex-column">
-                    <div className="logo p-0">
-                      <img src="./img/mentalup.webp" alt="" />
-                    </div>
                     <h3>{getText("headerMentalUpT")}</h3>
                     <p>{getText("headerMentalUpP")}</p>
-                    <Link to="mentalup" className="myBtn custom-btn btn-16" type="submit">
+                    <Link
+                      to="mentalup"
+                      className="myBtn custom-btn btn-16"
+                      type="submit"
+                    >
                       {getText("more")}
                     </Link>
                   </div>
@@ -183,27 +193,34 @@ const Header = () => {
               <div className="row align-items-center justify-content-center">
                 <div className="col-md-6">
                   <div className="info flex-column">
-                    <div className="logo p-0">
-                      <img src="./img/vedubox_logo.svg" alt="" />
-                    </div>
                     {/* <h3>{getText("headerMentalUpT")}</h3> */}
                     <h3>Online Eğitim Platformu</h3>
-                    <p>Birkaç dakika içinde kendi logonuz ve renklerinizle tamamen size özel bir sistem kuralım.</p>
+                    <p>
+                      Birkaç dakika içinde kendi logonuz ve renklerinizle
+                      tamamen size özel bir sistem kuralım.
+                    </p>
                     <p>{getText("headerMentalUpP")}</p>
-                    <Link to="https://www.vedubox.com/" className="myBtn custom-btn btn-16" type="submit">
+                    <Link
+                      to="https://www.vedubox.com/"
+                      className="myBtn custom-btn btn-16"
+                      type="submit"
+                    >
                       {getText("more")}
                     </Link>
                   </div>
                 </div>
                 <div className="col-md-5">
                   <div className="img">
-                    <img className="w-100" src="./img/vedubox-online-akademi.webp" alt="" />
+                    <img
+                      className="w-100"
+                      src="./img/vedubox-online-akademi.webp"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </SwiperSlide>
-
 
           <div className="autoplay-progress" slot="container-end">
             <svg viewBox="0 0 48 48" ref={progressCircle}>
